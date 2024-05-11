@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cbD8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/d8"
+        app:layout_constraintBottom_toTopOf="@+id/cbD12"
+        app:layout_constraintEnd_toStartOf="@+id/cbD100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbD6" />
+
+    <CheckBox
+        android:id="@+id/cbD10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="128dp"
+        android:text="@string/d10"
+        app:layout_constraintBottom_toTopOf="@+id/txtSaida"
+        app:layout_constraintEnd_toStartOf="@+id/cbD20"
+        app:layout_constraintStart_toEndOf="@+id/txtDados"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbD20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/d20"
+        app:layout_constraintBottom_toTopOf="@+id/btnRolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbD4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbD100"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="127dp"
+        android:text="@string/d100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbD8"
+        app:layout_constraintTop_toBottomOf="@+id/btnRolar" />
+
+    <CheckBox
+        android:id="@+id/cbD6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="295dp"
+        android:text="@string/d6"
+        app:layout_constraintBottom_toTopOf="@+id/cbD8"
+        app:layout_constraintEnd_toStartOf="@+id/btnRolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbD4" />
+
+    <CheckBox
+        android:id="@+id/cbD12"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/d12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaida" />
+
+    <CheckBox
+        android:id="@+id/cbD4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="170dp"
+        android:text="@string/d4"
+        app:layout_constraintBottom_toTopOf="@+id/cbD6"
+        app:layout_constraintEnd_toStartOf="@+id/cbD20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDados" />
+
+    <TextView
+        android:id="@+id/txtDados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/dados"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cbD4"
+        app:layout_constraintEnd_toStartOf="@+id/cbD10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="211dp"
+        android:text="@string/rolar"
+        app:layout_constraintBottom_toTopOf="@+id/cbD100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbD6"
+        app:layout_constraintTop_toBottomOf="@+id/cbD20" />
+
+    <TextView
+        android:id="@+id/txtSaida"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/cbD12"
+        app:layout_constraintEnd_toEndOf="@+id/cbD20"
+        app:layout_constraintStart_toStartOf="@+id/cbD10"
+        app:layout_constraintTop_toBottomOf="@+id/cbD10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
